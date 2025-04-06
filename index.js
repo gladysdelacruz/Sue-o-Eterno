@@ -7,6 +7,7 @@ gsap.set('.image, .fondogris_image1',{
     opacity:0,
 })
 
+
 const tl1 = gsap.timeline().to('.video , .fondogris_video',{
     width: '33.33%',
     objectFit:'cover',
@@ -40,6 +41,17 @@ const tl2 = gsap.timeline().to('.titulo_Image2',{
     opacity:1,
 })
 
+const tl3 = gsap.timeline().to('.section_objetivos',{
+    height:'60%',
+    opacity:1,
+    duration:'0.2',
+})
+const tl4 = gsap.timeline().to('.spring_section',{
+    height:'100%',
+    width:'100%',
+    duration:'0.5',
+})
+
 ScrollTrigger.create({
     animation:tl1,
     trigger:'.container',
@@ -47,19 +59,40 @@ ScrollTrigger.create({
     end:'bottom 80%',
     scrub:true,
     pin:'.container',
-    markers:true,
+
     toggleActions: 'play reverse play reverse',
 })
 ScrollTrigger.create({
     animation:tl2,
-    trigger:'.container_Image2',
+    trigger:'.container_Image2 ',
     start:'100% 90%',
     end:'bottom center',
     scrub:true,
     pin:'.container_Image2',
-    markers:true,
+
     toggleActions: 'play reverse play reverse',
 })
+
+ScrollTrigger.create({
+    animation:tl3,
+    trigger:'.container_objetivos',
+    start:'50% bottom',
+    end:'70% bottom',
+    scrub:true,
+    toggleActions: 'play reverse play reverse',
+})
+ScrollTrigger.create({
+    animation:tl4,
+    trigger:'.container_spring',
+    start:'top center',
+    end:'center center',
+    scrub:true,
+    markers:true,
+    pin:'.container_Image2',
+    toggleActions: 'play reverse play reverse',
+})
+
+
 
 
 // const tl1 = gsap.timeline().to('.video',{
