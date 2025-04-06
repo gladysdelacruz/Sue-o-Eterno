@@ -7,6 +7,11 @@ gsap.set('.image, .fondogris_image1',{
     opacity:0,
 })
 
+gsap.set('.spring_section',{
+    height: '80%',
+    width: '75%',
+})
+
 
 const tl1 = gsap.timeline().to('.video , .fondogris_video',{
     width: '33.33%',
@@ -76,19 +81,19 @@ ScrollTrigger.create({
 ScrollTrigger.create({
     animation:tl3,
     trigger:'.container_objetivos',
-    start:'50% bottom',
-    end:'70% bottom',
+    start:'top bottom',
+    end:'top bottom',
     scrub:true,
+    pin:'.container_objetivos',
     toggleActions: 'play reverse play reverse',
 })
 ScrollTrigger.create({
     animation:tl4,
     trigger:'.container_spring',
-    start:'top center',
-    end:'center center',
+    start:'top bottom',
+    end:'top bottom',
     scrub:true,
     markers:true,
-    pin:'.container_Image2',
     toggleActions: 'play reverse play reverse',
 })
 
