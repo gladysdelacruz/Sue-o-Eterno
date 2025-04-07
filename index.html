@@ -21,11 +21,19 @@
     <title>Sueño Eterno</title>
 </head>
 
-<body>
-    <div class="container">
-        <div>
-
+<body class="body">
+    <div class="toggle "></div>
+    <div class="sidebar">
+        <div class="container_sidebar">
+            <span class="sidebar_divisor"></span>
+            <ul class="navigation">
+                <li><a href="./index.html">Home</a><span class="arrow_navigation"></span></li>
+                <li><a href="./shop.html">Tienda</a><span class="arrow_navigation"></span></li>
+                <li><a href="./contacto.html">Contacto</a><span class="arrow_navigation"></span></li>
+            </ul>
         </div>
+    </div>
+    <div class="container">
         <div class="title"> <img src="./assets/Titulo_SueñoEterno.webp" alt=""></div>
         <div class="container_video">
             <video class="video" src="https://qzklkzclagpzwlpltaxq.supabase.co/storage/v1/object/public/imagenes//5399635-uhd_3840_2160_25fps.mp4" autoplay loop muted></video>
@@ -93,6 +101,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
     <script src="./index.js"></script>
+    <script src="./toggle.js"></script>
 </body>
 
 </html>

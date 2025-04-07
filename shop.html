@@ -19,14 +19,25 @@
     <link rel="stylesheet" href="./app.css">
     <title>Shop-SueñoEterno</title>
 </head>
-<body>
+<body class="body">
+    <div class="toggle"></div>
+    <div class="sidebar">
+        <div class="container_sidebar">
+            <span class="sidebar_divisor"></span>
+            <ul class="navigation">
+                <li><a href="./index.html">Home</a><span class="arrow_navigation"></span></li>
+                <li><a href="./shop.html">Tienda</a><span class="arrow_navigation"></span></li>
+                <li><a href="./contacto.html">Contacto</a><span class="arrow_navigation"></span></li>
+            </ul>
+        </div>
+    </div>
     <header class="header">
-        <img class="header_logotipo" src="./assets/Sueño eterno (Logotipo).webp" alt="">
+        <img class="header_logotipo" src="./assets/Sueño eterno (Logotipo y Nombre).webp" alt="">
         <div class="header_navbar">
             <a href="./index.html" class="items_navbar">Home</a>
-            <a href="#" class="items_navbar">Occasions</a>
+            <a href="./shop.html" class="items_navbar">Tienda</a>
             <a href="./contacto.html" class="items_navbar">Contacto</a>
-            <a href="#" class="items_navbar">Gifts</a>
+            
         </div>
     </header>
     <section class="bannershop">
@@ -193,4 +204,5 @@
 </body>
 
 <script src="./shop.js"></script>
+<script src="./toggle.js"></script>
 </html>
