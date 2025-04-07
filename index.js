@@ -96,7 +96,16 @@ ScrollTrigger.create({
     toggleActions: 'play reverse play reverse',
 })
 
-
+const video = document.querySelector('.video');
+video.addEventListener('canplaythrough', () => {
+    video.play()
+      .then(() => {
+        console.log("🎬 El video ha comenzado a reproducirse.");
+      })
+      .catch(error => {
+        console.error("⚠️ Error al intentar reproducir el video:", error);
+      });
+  });
 
 
 
