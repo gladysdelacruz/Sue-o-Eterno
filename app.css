@@ -334,6 +334,83 @@ a{
     color: #000;
 }
 
+/*Banner*/
+.bannershop{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    background-color: #848b62;
+    margin-bottom: 50px;
+}
+
+.bannershop_container{
+    display: flex;
+    width: 60%;
+}
+.bannershop_container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
+
+.bannershop_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% 60%;
+}
+
+.bannershop_detail{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    height: auto;
+}
+
+.bannershop_title{
+    color: #ffffff;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.bannershop_paragraph{
+    color: #ffffff;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.bannershop_links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bannershop_links__price{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.bannershop_links__button{
+    background-color: white;
+    color: #848b62;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 300;
+}
+
+/*Products and Filter Shop*/
 
 .container_shop{
     display: flex;
