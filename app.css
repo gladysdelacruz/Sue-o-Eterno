@@ -12,6 +12,10 @@ a{
     text-decoration: none;
 }
 
+input{
+    border: none;
+}
+
 .container {
     width: calc(100vw - 5px);
     height: 100vh;
@@ -110,8 +114,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: end;
-    height: 32%;
-    margin: auto;
+    justify-content: center;
     width: 50%;
 }
 
@@ -359,7 +362,7 @@ a{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 100% 60%;
+    object-position: 50% 60%;
 }
 
 .bannershop_detail{
@@ -445,7 +448,7 @@ a{
 .section_articles{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 75%;
     gap: 30px;
 }
 
@@ -527,4 +530,235 @@ a{
     padding: 13px 40px;
     border-radius: 20px;
     font-size: 18px;
+}
+
+
+/*Pagina de contactanos*/
+.containerprincipal_contacto{
+    margin-top: 50px;
+}
+
+.containerheader_contactanos{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #848b62;
+}
+
+.containerheader_contactanos_flechita{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 130px;
+    height: 90px;
+}
+.containerheader_contactanos_curva{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    width: 430px;
+    height: 90px;
+}
+
+.headercontactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 200px;
+    width: 40%;
+}
+
+.headercontactanos_title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.headercontactanos_paragraph{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+/*Contacto Formulario y Newletters*/
+.container_formularinewsletters{
+
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+.contacto_section1{
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+    margin-bottom: 40px;
+}
+
+.contacto_formulario{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 20px;
+}
+
+.contacto_newletters{
+    height: 100%;
+    width: 25%;
+}
+
+.contacto_formulario__inputsgroup{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.contactoinput_input1{
+    width: 50%;
+}
+.contactoinput_input2{
+    width: 50%;
+}
+
+.contactoinput{
+    border-radius: 20px;
+    background-color: #848b62;
+    border: none;
+    padding: 10px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.contactoinput::placeholder{
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.contactoinput_input_textarea{
+    height: 170px;
+    resize: none;
+}
+
+.contacto_formulario_button{
+    background-color: #404730;
+    border: none;
+    color: #ffffff;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 300;
+}
+
+.contacto_newletters_section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    background-color: #404730;
+    border-radius: 20px;    
+    padding: 30px;
+}
+
+.contacto_newletters_title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.contacto_newletters_paragraph{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.contacto_newletters_input{
+    background-color: #fff;
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.contacto_newletters_button{
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    width: 100%;
+    padding: 7px 7px;
+    background-color: #212218;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.container_squaresinformation{
+    display: flex;
+    gap: 20px;
+}
+
+.squaresinformation{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 33.33%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.squaresinformation_header{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.squaresinformation_title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+
+.squaresinformation_title__1{
+    color: #efefec;
+}
+
+.squaresinformation_title__2{
+    color: #212218;
+}
+.squaresinformation_title__3{
+    color: #656d3d;
+}
+
+.squaresinformation__1{
+    background-color: #656d3d;
+}
+
+.squaresinformation__2{
+    background-color: #848b62;
+}
+
+.squaresinformation__3{
+    background-color: #cfcfc1;
+}
+
+.squaresinformation_image{
+    width: 60px;
+}
+
+.squaresinformation_paragraph{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.mapa{
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 40px;
 }
